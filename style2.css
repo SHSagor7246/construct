@@ -1,0 +1,166 @@
+/*== Importing Google fonts == */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* ----- VARIABLES CSS ----*/
+:root {
+    --header-height: 3.5rem;
+  
+          /*====== Colors =======*/
+/*Color mode Hsl(hue, saturation, Lightness)*/
+ --first-color: hsl(18,95%,55%);
+ --second-color: hsl( 42,98%,52%);
+ --first-gradient: linear-gradient(90deg,
+                  hsl(18, 95%, 55%),
+                  hsl(18,98%,64%));
+ --tittle-color: hsl(225, 12%, 12%);
+ --text-color  : hsl(225, 12%, 24%);
+ --first-color-light: hsl(255,4%, 70%);
+ --body-color: hsl(0,0%, 100%);
+ --container-color: hsl(0,0%, 100%);
+ --white-color: hsl(0,0%, 100%);
+ --black-color: hsl(255,20%, 10%);
+ --gray-border: hsl(255,6%, 90%);
+ --black-border: hsl(255,10%, 20%);
+
+  /* ==== Font and typography ====*/
+   /*.5rem = 8px । 1 rem = 16px--*/
+--body-font: "Montserrat",sans-serif;
+--big-font-size: 2.25rem;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--normal-font-size: 938rem;
+--small-font-size: 813rem;
+
+/*---- Font weight ---- */
+--font-regular: 400;
+--font-medium: 500;
+--font-semi-bold: 600;
+--font-bold: 700;
+
+/*===== Z index  =====*/
+--z-tooltip: 10;
+--Z-fixed: 100;
+}
+
+/*======= Responsive typography ====*/
+@media screen and (min-width: 1150) {
+    :root {
+        --big-font-size: 3.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 875rem;
+    }
+}
+
+/*======= Base ======*/
+* {
+    box-sizing: border-box;
+    pidding 0;
+    madrgin: 0;
+}
+
+html {
+    scroll-behavior: somoth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+    color: var(--tittle-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: name;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*======== REUSABLE CSS CLASSES =======*/
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+.section__tittle,
+.section__subtittle {
+    text-align: center;
+}
+
+.section__tittle {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 1.5rem;
+}
+
+.section__subtittle {
+    display: block;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--second-color);
+    margin-bottom: .5rem;
+}
+
+.main {
+    overflow: hidden;
+}
+
+/*========= HEADER & NAV =========*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--black-color);
+    z-index: var(--z--fixed);
+}
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation for mobile devices */
+
+
+/* Show menu */
+
+
+/* Change background header */
+
+
+/* Active link */
+
+
+/*========= HOME =========*/
+
+
+/*===========BUTTON ============*/
+
+
+/*============== ABOUT =============*/
